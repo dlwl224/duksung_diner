@@ -135,4 +135,10 @@ iframe {
         height: 300px;
     }
 }
+/* 테이블 행 hover 시 배경색 변경 */
+tbody tr:hover {
+    background-color: #a9acaf;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
 
