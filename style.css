@@ -85,17 +85,9 @@ ul li a:hover {
     position: relative;
     padding-left: 2em;
     margin: 10px 0;
-    display: block; /* 핵심: 한 줄에 하나씩! */
+    display: block; 
 }
 
-/* 숫자 번호 붙이기 */
-#restaurant_list li::before {
-    content: counter(list-number) ". ";
-    position: absolute;
-    left: 0;
-    font-weight: bold;
-    color: #007BFF;
-}
 
 
 
