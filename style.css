@@ -79,9 +79,6 @@ ul li a:hover {
 
 /* 각 li는 기본 block 흐름으로 내려가기 */
 #restaurant_list li {
-    counter-increment: list-number;
-    position: relative;
-    padding-left: 2em;
     margin: 10px 0;
     display: block; 
 }
