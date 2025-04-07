@@ -71,7 +71,8 @@ ul li a:hover {
 }
 
 #restaurant_list ol {
-    list-style: decimal inside; /* 기본 숫자 스타일 */
+    list-style-type: decimal;
+    list-style-position: inside;
     padding-left: 0;
     display: inline-block;  
     text-align: left;       
