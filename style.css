@@ -70,7 +70,11 @@ ul li a:hover {
     list-style: none;
     counter-reset: list-number;
     padding-left: 0;
-    text-align: center; 
+    text-align: center;         
+    display: flex;              
+    justify-content: center;   
+    flex-wrap: wrap;           
+    gap: 10px;                 
 }
 
 
@@ -78,9 +82,18 @@ ul li a:hover {
     counter-increment: list-number;
     position: relative;
     padding-left: 2em;
-    margin: 10px 0;
-    display: inline-block;
+    margin: 10px;
     text-align: left;
+    position: relative;
+}
+
+/* 숫자 붙이기 스타일은 유지 */
+#restaurant_list li::before {
+    content: counter(list-number) ". ";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    color: #007BFF;
 }
 
 
