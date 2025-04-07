@@ -65,35 +65,26 @@ ul li a:hover {
     text-decoration: underline;
 }
 
-/* 숫자 목록 가운데 정렬 형태로 커스터마이징 */
+/* <section> 자체 가운데 정렬 */
+#restaurant_list {
+    text-align: center;
+}
+
+/* ol을 가운데 정렬되도록 inline-block */
 #restaurant_list ol {
     list-style: none;
     counter-reset: list-number;
     padding-left: 0;
-    text-align: center;         
-    display: flex;              
-    justify-content: center;   
-    flex-wrap: wrap;           
-    gap: 10px;                 
+    display: inline-block;  
+    text-align: left;       
 }
 
-
+/* 리스트 항목은 블록처럼 한 줄에 하나씩 */
 #restaurant_list li {
     counter-increment: list-number;
     position: relative;
     padding-left: 2em;
-    margin: 10px;
-    text-align: left;
-    position: relative;
-}
-
-/* 숫자 붙이기 스타일은 유지 */
-#restaurant_list li::before {
-    content: counter(list-number) ". ";
-    position: absolute;
-    left: 0;
-    font-weight: bold;
-    color: #007BFF;
+    margin: 10px 0;
 }
 
 
