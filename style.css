@@ -67,9 +67,10 @@ ul li a:hover {
 
 /* 숫자 목록 가운데 정렬 형태로 커스터마이징 */
 #restaurant_list ol {
-    list-style: decimal inside;  /* 숫자가 텍스트 바로 앞에 나오게 함 */
+    list-style: none;
+    counter-reset: list-number;
     padding-left: 0;
-    text-align: center;
+    text-align: center; 
 }
 
 
