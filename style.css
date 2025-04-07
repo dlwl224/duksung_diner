@@ -17,6 +17,7 @@ body {
 /* nav 간격 띄우기 */
 nav {
     margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 /* 컨테이너 정렬 */
@@ -64,12 +65,13 @@ ul li a:hover {
     text-decoration: underline;
 }
 
-/* 숫자 목록 오른쪽 정렬 형태로 커스터마이징 */
+/* 숫자 목록 가운데 정렬 형태로 커스터마이징 */
 #restaurant_list ol {
-    list-style: none;
-    counter-reset: list-number;
+    list-style: decimal inside;  /* 숫자가 텍스트 바로 앞에 나오게 함 */
     padding-left: 0;
+    text-align: left;
 }
+
 
 #restaurant_list li {
     counter-increment: list-number;
@@ -79,13 +81,7 @@ ul li a:hover {
     text-align: left;
 }
 
-#restaurant_list li::before {
-    content: counter(list-number) ". ";
-    position: absolute;
-    left: 0;
-    font-weight: bold;
-    color: #007BFF;
-}
+
 
 /* 테이블 스타일 */
 table {
