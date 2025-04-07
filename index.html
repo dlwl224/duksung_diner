@@ -2,14 +2,18 @@
 <html lang="ko">
 <head>
     <meta charset="utf-8">
+    <!-- 반응형 웹을 위한 뷰포트 설정 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>덕성여대 맛집 투어</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- 페이지 헤더: 제목 출력 -->
     <header>
         <h1>덕성여대 맛집 투어</h1>
     </header>
+
+    <!-- 내비게이션 영역: 페이지 내 링크 목록 -->
     <nav>
         <h2>페이지 목차</h2>
         <ul>
@@ -18,16 +22,22 @@
             <li><a href="#restaurant_detail">맛집 상세 정보</a></li>
         </ul>
     </nav>
+
+    <!-- 메인 콘텐츠 영역 -->
     <main>
+        <!-- 페이지 개요 섹션 -->
         <section id="overview">
             <h2>개요</h2>
             <p>덕성여자대학교는 <mark>서울 도봉구 삼양로144길 33</mark>에 있습니다.<br>
                 주변에 맛있는 음식점이 많습니다. 다양한 음식을 경험해 보세요!
             </p>
+            <!-- 강조 박스: 맛집 리스트 출처 안내 -->
             <div class="highlight">
                 <p>아래의 맛집 리스트는 다이닝코드에서 <span class="highlight-text">덕성여대 맛집</span>으로 검색한 210곳에서 선정되었습니다.</p>
             </div>
         </section>
+
+        <!-- 맛집 목록 섹션 -->
         <section id="restaurant_list">
             <h2>덕성여대 맛집 목록</h2>
             <ol>
@@ -38,6 +48,8 @@
                 <li><a href="pages/place5.html">마포감자국 수유</a></li>
             </ol>
         </section>
+
+        <!-- 맛집 상세 정보 섹션 -->
         <section id="restaurant_detail">
             <h2>맛집 상세 정보</h2>
             <table>
@@ -90,6 +102,8 @@
             </table>
         </section>
     </main>
+
+    <!-- 페이지 푸터 -->
     <footer>
         <p>&copy; 2025 덕성여대 맛집 투어</p>
     </footer>
