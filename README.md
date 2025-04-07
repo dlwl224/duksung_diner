@@ -22,6 +22,7 @@ duksung_diner
     └── place1.html 등 
 └── README.md # 프로젝트 설명 문서
 
+```
 ---
 
 ## ✨ 주요 기능
