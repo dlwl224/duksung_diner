@@ -69,7 +69,7 @@ ul li a:hover {
 #restaurant_list ol {
     list-style: decimal inside;  /* 숫자가 텍스트 바로 앞에 나오게 함 */
     padding-left: 0;
-    text-align: left;
+    text-align: center;
 }
 
 
@@ -78,6 +78,7 @@ ul li a:hover {
     position: relative;
     padding-left: 2em;
     margin: 10px 0;
+    display: inline-block;
     text-align: left;
 }
 
