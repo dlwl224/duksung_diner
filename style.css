@@ -14,6 +14,11 @@ body {
     padding: 20px;
 }
 
+/* nav 간격 띄우기 */
+nav {
+    margin-top: 2em;
+}
+
 /* 컨테이너 정렬 */
 .container {
     display: inline-block;
@@ -57,6 +62,29 @@ ul li a {
 
 ul li a:hover {
     text-decoration: underline;
+}
+
+/* 숫자 목록 오른쪽 정렬 형태로 커스터마이징 */
+#restaurant_list ol {
+    list-style: none;
+    counter-reset: list-number;
+    padding-left: 0;
+}
+
+#restaurant_list li {
+    counter-increment: list-number;
+    position: relative;
+    padding-left: 2em;
+    margin: 10px 0;
+    text-align: left;
+}
+
+#restaurant_list li::before {
+    content: counter(list-number) ". ";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    color: #007BFF;
 }
 
 /* 테이블 스타일 */
@@ -106,3 +134,4 @@ iframe {
         height: 300px;
     }
 }
+
